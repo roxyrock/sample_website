@@ -6,14 +6,14 @@
     </head>
     <body>
 
-        <div>
-            <a href="index.html">Home</a>
-            <a href="moby_dick.html">Moby Dick</a>
-            <a href="tags.html">Tags</a>
+        <div style="text-align:right;">
+            <a href="index.html" style="text-decoration:none;">Home</a>
+            <a href="tags.html" style="margin-left: 10px; text-decoration:none;">Tags</a>
+            <a href="moby_dick.html" style="margin-left: 10px; text-decoration:none;">Moby Dick</a>
         </div>
 
         <h1>Important HTML Tags</h1>
-        <a href="https://www.nasa.gov" target="_blank" rel="noopener"><img src="images/astronaut_tagged.jpg" alt="Tagged Astronaut"></a>
+        <a href="https://www.nasa.gov" target="_blank" rel="noopener"><img src="images/storm_trooper_tagged.jpg" alt="Tagged Storm Trooper"></a>
         <p>
             This page is designed as a quick reference for some of the common tags covered in <a href="https://learnenough.com/html"><em>Learn Enough HTML to Be dangerous</em></a>. 
             In the process of making it, we'learn how to make HTML <em>tables</em> via <code>tables</code> and related tags.
@@ -85,6 +85,16 @@
                 <td>list item</td>
                 <td>create an element of a list</td>
             </tr>
+            <tr>
+                <td><code>header</code></td>
+                <td>header</td>
+                <td>define a global site header</td>
+            </tr>
+            <tr>
+                <td><code>blockquote</code></td>
+                <td>blockquote</td>
+                <td>host content quoted from other sources</td>
+            </tr>
         </table>
         <h2>Inline Elements</h2>
         <table>
@@ -130,6 +140,47 @@
                 <td><code>&lt;span&gt;"Call me Ishmael"(Moby-Dick)&lt;span&gt;</code></td>
                 <td>"Call me Ishmael"(Moby-Dick)</td>
             </tr>
+            <tr>
+                <td><code>br</code></td>
+                <td>line break</td>
+                <td>used within a paragraph to create line breaks.</td>
+                <td><code>&lt;p&gt;This is some text.&lt;br&gt;And this is on a new line.&lt;p&gt;</code></td>
+            </tr>
         </table>
+
+        <h2>Document Tags</h2>
+        <table>
+            <tr>
+                <th>Tag</th>
+                <th>Name</th>
+                <th>Purpose</th>
+            </tr>
+            <tr>
+                <td><code>html</code></td>
+                <td>html tag</td>
+                <td>defines the start of an HTML document. It encompasses all other elements</td>
+            </tr>
+            <tr>
+                <td><code>head</code></td>
+                <td>head</td>
+                <td>Contains metadata about the document (e.g., title, links to stylesheets, scripts).</td>
+            </tr>
+            <tr>
+                <td><code>body</code></td>
+                <td>body</td>
+                <td>Contains the visible content of the page (e.g., text, images, links).</td>
+            </tr>
+            <tr>
+                <td><code>title</code></td>
+                <td>title</td>
+                <td>located within the <code>head</code> element of a web page. Informs search engine users about the topic of the page.</td>
+            </tr>
+            <tr>
+                <td><code>meta</code></td>
+                <td>meta</td>
+                <td>known as HTML metadata or SEO metadata. They provide valuable information to search engines and play a crucial role in determining a page’s topic and its position in search results.</td>
+            </tr>
+        </table>
+
     </body>
 </html>
