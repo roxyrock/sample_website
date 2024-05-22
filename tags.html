@@ -3,13 +3,14 @@
     <head>
         <title>HTML Tags</title>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
 
-        <div style="text-align:right;">
-            <a href="index.html" style="text-decoration:none;">Home</a>
-            <a href="tags.html" style="margin-left: 10px; text-decoration:none;">Tags</a>
-            <a href="moby_dick.html" style="margin-left: 10px; text-decoration:none;">Moby Dick</a>
+        <div class="nav-menu">
+            <a href="index.html" >Home</a>
+            <a href="tags.html" class="nav-spacing">Tags</a>
+            <a href="moby_dick.html" class="nav-spacing">Moby Dick</a>
         </div>
 
         <h1>Important HTML Tags</h1>
@@ -32,68 +33,64 @@
             </tr>
             <tr>
                 <td><code>h1</code>&ndash;<code>h6</code></td>
-                <td>headings</td>
-                <td>include a heading (levels 1&ndash;6)</td>
+                <td>Headings</td>
+                <td>Include a heading (levels 1&ndash;6)</td>
             </tr>
             <tr>
                 <td><code>p</code></td>
-                <td>paragraph</td>
-                <td>include a paragraph of text</td>
+                <td>Paragraph</td>
+                <td>Include a paragraph of text</td>
             </tr>
             <tr>
                 <td><code>table</code></td>
-                <td>table</td>
-                <td>include a table</td>
+                <td>Table</td>
+                <td>Include a table</td>
             </tr>
             <tr>
                 <td><code>tr</code></td>
-                <td>table row</td>
-                <td>include a row of data</td>
+                <td>Table row</td>
+                <td>Include a row of data</td>
             </tr>
             <tr>
                 <td><code>th</code></td>
-                <td>table header</td>
-                <td>make a table header</td>
+                <td>Table header</td>
+                <td>Make a table header</td>
             </tr>
             <tr>
                 <td><code>td</code></td>
-                <td>table data</td>
-                <td>include a table data cell</td>
+                <td>Table data</td>
+                <td>Include a table data cell</td>
             </tr>
-            <tr>
-                <td><code>header</code></td>
-                <td>header of the page</td>
-                <td>make the page header</td>
-            </tr>
+            
             <tr>
                 <td><code>div</code></td>
-                <td>division</td>
-                <td>organize the page</td>
+                <td>Division</td>
+                <td>Organize the page</td>
             </tr>
             <tr>
                 <td><code>ol</code></td>
-                <td>ordered list</td>
-                <td>create an ordered list of elements</td>
+                <td>Ordered list</td>
+                <td>List elements in numerical order</td>
             </tr>
             <tr>
                 <td><code>ul</code></td>
-                <td>unordered list</td>
-                <td>create an unordered list of elements</td>
+                <td>Unordered list</td>
+                <td>List elements whose order doesn't matter</td>
             </tr>
             <tr>
                 <td><code>li</code></td>
-                <td>list item</td>
-                <td>create an element of a list</td>
+                <td>List item</td>
+                <td>Include a list item (ordered or unordered)</td>
             </tr>
             <tr>
                 <td><code>header</code></td>
-                <td>header</td>
-                <td>define a global site header</td>
+                <td>Header</td>
+                <td>Label the page header</td>
             </tr>
             <tr>
                 <td><code>blockquote</code></td>
-                <td>blockquote</td>
-                <td>host content quoted from other sources</td>
+                <td>Block quotation</td>
+                <td>Show formatted quotation</td>
             </tr>
         </table>
         <h2>Inline Elements</h2>
@@ -107,36 +104,36 @@
             </tr>
             <tr>
                 <td><code>em</code></td>
-                <td>emphasized</td>
-                <td>make emphasized text</td>
+                <td>Emphasized</td>
+                <td>Make emphasized text</td>
                 <td><code>&lt;em&gt;technical sophistication&lt;/em&gt;</code></td>
                 <td><em>technical sophistication</em></td>
             </tr>
             <tr>
                 <td><code>strong</code></td>
-                <td>strong</td>
-                <td>make strong text</td>
+                <td>Strong</td>
+                <td>Make strong text</td>
                 <td><code>&lt;strong&gt;at least a billion people&lt;/strong&gt;</code></td>
                 <td><strong>at least billion people</strong></td>
             </tr>
             <tr>
                 <td><code>a</code></td>
-                <td>anchor</td>
-                <td>make hyperlink</td>
+                <td>Anchor</td>
+                <td>Make hyperlink</td>
                 <td><code>&lt;a href="https://learnenough.com/"&gt;LearnEnough&lt;/a&gt;</code></td>
                 <td><a href="https://learnenough.com/">Learn Enough</a></td>
             </tr>
             <tr>
                 <td><code>img</code></td>
-                <td>image</td>
-                <td>include an image</td>
+                <td>Image</td>
+                <td>Include an image</td>
                 <td><code>&lt;img src="https://bit.ly/1MZAFuQ" alt="Michael Hartl"&gt;</code></td>
                 <td><img src="https://bit.ly/1MZAFuQ" alt="Michael Hartl"></td>
             </tr>
             <tr>
                 <td><code>span</code></td>
-                <td>span</td>
-                <td>organize the page</td>
+                <td>Span</td>
+                <td>Organize the page</td>
                 <td><code>&lt;span&gt;"Call me Ishmael"(Moby-Dick)&lt;span&gt;</code></td>
                 <td>"Call me Ishmael"(Moby-Dick)</td>
             </tr>
@@ -145,6 +142,13 @@
                 <td>line break</td>
                 <td>used within a paragraph to create line breaks.</td>
                 <td><code>&lt;p&gt;This is some text.&lt;br&gt;And this is on a new line.&lt;p&gt;</code></td>
+            </tr>
+            <tr>
+                <td><code>code</code></td>
+                <td>Code</td>
+                <td>Format as source code</td>
+                <td><code>&lt;code&gt;table&lt;/code&gt;</code></td>
+                <td><code>table</code></td>
             </tr>
         </table>
 
