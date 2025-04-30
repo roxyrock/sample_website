@@ -5,14 +5,16 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HTML Tags</title>
+        <link rel="stylesheet" href="css/main.css">
     </head>
 
     <body>
 
-        <div>
-            <a href="index.html">Home</a>
-            <a href="moby_dick.html">Moby Dick</a>
-            <a href="tags.html">HTML Tags</a>
+        <div id="main-nav" class="nav-menu">
+            <a href="index.html" style="text-decoration:none;">Home</a>
+           <a href="tags.html" class="nav-spacing">HTML Tags</a> 
+           <a href="moby_dick.html" class="nav-spacing">Moby Dick</a>
+            
         </div>
 
         <header>
@@ -44,12 +46,12 @@
             </tr>
             <tr>
                 <td><code>h1</code>&ndash;<code>h6</code></td>
-                <td><span>headings</span></td>
+                <td style="padding:10px;"><span>headings</span></td>
                 <td>include a heading (levels 1&ndash;6)</td>
             </tr>
             <tr>
                 <td><code>p</code></td>
-                <td><span>paragraph</span></td>
+                <td style="padding:10px;"><span>paragraph</span></td>
                 <td>include a paragraph of text</td>
             </tr>
             <tr>
@@ -75,17 +77,37 @@
             <tr>
                 <td><code>ol</code></td>
                 <td><span>ordered list</span></td>
-                <td>include an ordered list</td>
+                <td>list elements in numerical order</td>
             </tr>
             <tr>
                 <td><code>ul</code></td>
                 <td><span>unordered list</span></td>
-                <td>include an unordered list</td>
+                <td>list elements whose order doesn't matter</td>
             </tr>
             <tr>
                 <td><code>li</code></td>
                 <td><span>list item</span></td>
-                <td>include a list item</td>
+                <td>include a list item (ordered or unordered)</td>
+            </tr>
+            <tr>
+                <td><code>div</code></td>
+                <td><span>division</span></td>
+                <td>Define block-level section in document</td>
+            </tr>
+            <tr>
+                <td><code>blockquote</code></td>
+                <td><span>block quotation</span></td>
+                <td>include a block quotation, show formatted quotation</td>
+            </tr>
+            <tr>
+                <td><code>header</code></td>
+                <td><span>header</span></td>
+                <td>label the page header</td>
+            </tr>
+            <tr>
+                <td><code>br</code></td>
+                <td>line break</td>
+                <td>Inserts a line break, but does not act as a container</td>
             </tr>
         </table>
     </div>
@@ -112,7 +134,7 @@
                 <td><code>strong</code></td>
                 <td>strong</td>
                 <td>make strong text</td>
-                <td><code>&lt;strong&gt;at least a billion people&lt;strong&gt;</code></td>
+                <td><code>&lt;strong&gt;at least a billion people&lt;/strong&gt;</code></td>
                 <td><strong>at least a billion people</strong></td>
             </tr>
             <tr>
@@ -140,11 +162,62 @@
             <tr>
                 <td><code>code</code></td>
                 <td>code</td>
-                <td>include a line of code</td>
-                <td><code>&lt;code&gt;&lt;h1&gt;&lt;/code&gt;</code></td>
+                <td>format as source code</td>
+                <td><code>&lt;code&gt;table&lt;/code&gt;</code></td>
                 <td><code>&lt;h1&gt;</code></td>
             </tr>
+            <tr>
+                <td><code>span</code></td>
+                <td>span</td>
+                <td>define inline section in document</td>
+                <td><code>&lt;span&gt;technical sophistication&lt;/span&gt;</code></td>
+                <td><span>technical sophistication</span></td>
+            </tr>
         </table>
+    </div>
+
+    <div class="document_tags">
+        <h2>Document Tags</h2>
+
+        <table>
+            <tr>
+                <th>Tag</th>
+                <th>Name</th>
+                <th>Purpose</th>
+                <th>Example</th>
+            </tr>
+            <tr>
+                <td><code>html</code></td>
+                <td>HTML</td>
+                <td>defines the structure of the web page</td>
+                <td><code>&lt;html&gt;...&lt;/html&gt;</code></td>
+            </tr>
+            <tr>
+                <td><code>head</code></td>
+                <td>head</td>
+                <td>contains metadata and links to external resources</td>
+                <td><code>&lt;head&gt;...&lt;/head&gt;</code></td>
+            </tr>
+            <tr>
+                <td><code>body</code></td>
+                <td>body</td>
+                <td>holds the visible content of the page.</td>
+                <td><code>&lt;body&gt;...&lt;/body&gt;</code></td>
+            </tr>
+            <tr>
+                <td><code>title</code></td>
+                <td>title</td>
+                <td>sets the title of the webpage shown in the browser tab</td>
+                <td><code>&lt;title&gt;...&lt;/title&gt;</code></td>
+            </tr>
+            <tr>
+                <td><code>meta</code></td>
+                <td>meta</td>
+                <td>provides metadata like character encoding and viewport settings</td>
+                <td><code>&lt;meta charset="UTF-8"&gt;</code></td>
+            </tr>
+        </table>
+
     </div>
 
     </body>

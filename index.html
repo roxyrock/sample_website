@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn Enough to Be Dangerous</title>
+    <link rel="stylesheet" href="css/main.css">
   </head>
 
   <body>
 
-    <div>
-      <a href="index.html">Home</a>
-      <a href="moby_dick.html">Moby Dick</a>
-      <a href="tags.html">HTML Tags</a>
+    <div id="main-nav" class="nav-menu">
+      <a href="index.html" style="text-decoration:none;">Home</a>
+      <a href="tags.html" class="nav-spacing">HTML Tags</a>
+      <a href="moby_dick.html" class="nav-spacing">Moby Dick</a>      
     </div>
 
     <h1>Learn Enough Story</h1>
@@ -28,7 +29,7 @@
 
     <p>
       <a href="https://twitter.com/learnenough" target="_blank"
-      rel="noopener" style="text-decoration: none;">
+      rel="noopener" class="image-link">
         <img src="images/small_twitter_logo.png" alt="logo">
       </a>
       You should follow Learn Enough on Twitter
@@ -45,7 +46,21 @@
     
     <a href="https://www.flickr.com/photos/deborah_s_perspective/14144861329">
       <img src="images/kitten.jpg" alt="An adorable kitten"/>
-    </a> 
+    </a>
+    
+    <h2>Quotations</h2>
+    <p>
+      In addition to hosting most of the world's supply of kitten videos, the 
+      Web is also full of inspiring quotes, perhaps none more so than this one:
+    </p>
+
+    <blockquote style="padding: 2px 20px; background: #f0f0f0;">
+      <p>
+        <em>Don't believe every quote you read on the Internet</em>
+        <br>
+        -Abraham, Lincoln
+      </p>
+    </blockquote>
 
     <h2>Background</h2>
     <p>
@@ -61,7 +76,7 @@
        <a href="https://www.learnenough.com/">learnenough.com</a>.
     </p>
 
-    <h2>Founders</h2>
+    <h2 id="founders">Founders</h2>
 
     <p>
        Learn Enough to Be Dangerous was founded in 2015 by Michael Hartl, Lee Donahoe,
